@@ -1,0 +1,194 @@
+@import "./variables";
+
+#screen__home{
+	.title1{
+		font-weight: bold;
+		text-align: center;
+		font-size: 16px;
+		letter-spacing: 3px;
+		margin: 50px auto 30px auto;
+	}
+	.title2{
+		font-weight: bold;
+		text-align: center;
+		font-size: 32px;
+		margin: 0px auto;
+		span{ color: $theme-red }
+	}
+	.divider{
+		text-align: center;
+		span{
+			width: 50px;
+			height: 2px;
+			background-color: $theme-red;
+			display: inline-block;
+			position: relative;
+		}
+		span:nth-child(2),span:nth-child(4){ width: 4px; height: 4px; margin: 0 5px 0 5px; top: 1px; }
+		span:nth-child(3){ width: 5px; height: 5px; margin: 0 5px 0 5px; top: 1.2px; }
+	}
+	.bursary_container{
+		max-width: 1280px;
+		margin: auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+	.bursary_wrapper{
+		border: 1px solid #e9e9e9;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+		max-width: 370px;
+		margin: auto;
+		cursor: pointer;
+		figure{
+			width: 100%;
+			height: 340px;
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 5px;
+			img{
+				width: 100%;
+				min-height: 340px;
+			}
+			.raised_money{ font-size: 25px; color: $theme-red }
+			.total_goal{ font-size: 16px; color: $secondary }
+			.cause_over_title{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				font-size: 12px;
+				text-align: center;
+				color: #FFF;
+				width: 100%;
+				font-weight: 700;
+				background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+				height: 180px;
+				padding-top: 120px;
+				transition: 0.6s all ease;
+			}
+			.overlay_box{
+				width: 100%;
+				height: 340px;
+				background-color: rgba(0,0,0,0.7);
+				position: absolute;
+				top: -100%;
+				left: 0;
+				transition: 0.6s all ease;
+				.content{
+					width: 100%;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					text-align: center;
+					color: $white;
+				}
+			}
+		}
+		.bursary_title{ font-size: 18px; text-align: center; padding: 15px 5px; }
+		.bursary_description{
+			font-size: 14px;
+			text-align: left;
+			padding: 15px 5px;
+			color: #555555;
+			.read_more{ color: $secondary; font-weight: bolder; font-size: 12px; }
+		}
+		.expiry{ color: grey; font-size: 12px; text-align: right; padding: 5px; }
+	}
+	.bursary_wrapper:hover{
+		.cause_over_title{
+			bottom: -100%;
+			transition: 0.3s all linear;
+		}
+		.overlay_box{
+			top: 0;
+		}
+	}
+	.recent_donors{
+		background-color: #fbfbfb;
+	}
+	.left_container{
+		width: 100%;
+		height: 520px;
+		position: relative;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.overlay_box{
+			background-color: rgba(0,0,0,0.7);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.content{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+			width: 100%;
+			h4{ font-size: 15px; color: $white; margin-bottom: 50px; }
+			h2{ color: $white; margin-bottom: 10px; text-transform: uppercase; }
+			h3{ color: $theme-red; text-transform: uppercase; margin-bottom: 50px; }
+		}
+	}
+	.donors{
+		padding-top: 50px;
+		text-align: left;
+		margin-left: 150px;
+		.text{ font-size: 18px; color: #555555; }
+		span{ color: $theme-red; font-size: 20px; }
+	}
+	.button{
+		text-transform: uppercase;
+		background: transparent;
+		border: 2px solid $theme-red !important;
+		color: $white !important;
+		border-radius: 3px;
+		font-family: $montserrat;
+		font-size: 13px;
+		padding: 14px 35px;
+		margin: auto;
+		margin-right: 20px;
+		display: inline-block;
+		cursor: pointer;
+		transition: all 0.3s linear;
+		text-decoration: none;
+	}
+	.button:hover{
+		background-color: $theme-red;
+		text-decoration: none;
+	}
+}
+
+
+/*-------- Responsive PC -------*/
+@media only screen and (min-width: 860px) {
+
+}
+
+/*-------- Responsive Tablet -------*/
+@media screen and (max-width: 859px){
+	.donors{ margin-left: 10px !important; padding-top: 10px !important; }
+	.hideInTablet{ display: none }
+	.left_container{ height: 400px !important }
+}
+
+/*-------- Responsive Mobile -------*/
+@media screen and (max-width: 420px){
+  #screen__home{
+		.title1{
+			font-weight: bold;
+			text-align: center;
+			font-size: 16px;
+			letter-spacing: 3px;
+			margin: 50px 10px 30px 10px;
+		}
+		.left_container{
+			height: 400px;
+		}
+		.bursary_container{ text-align: center; }
+		.donors{ margin-left: 10px }
+	}
+}

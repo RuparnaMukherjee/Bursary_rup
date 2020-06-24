@@ -1,0 +1,30 @@
+@import "./variables";
+
+#screen__contact{
+	.title{
+		color: $white;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+	.contents{
+		margin: 10px auto;
+		max-width: 100%;
+		width: 600px;
+	}
+}
+
+/*-------- Responsive PC -------*/
+@media only screen and (min-width: 860px) {
+
+}
+
+/*-------- Responsive Tablet -------*/
+@media screen and (max-width: 859px){
+
+}
+
+/*-------- Responsive Mobile -------*/
+@media screen and (max-width: 420px){
+
+}

@@ -1,0 +1,70 @@
+@import "./variables";
+
+.component__footer{
+	position: relative;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/footer-bg.jpg");
+  .overlay{
+  	position: relative;
+  	top: 0;
+  	left: 0;
+  	background-color: rgba(0,0,0,0.8);
+  	width: 100%;
+  	height: 100%;
+  	overflow: hidden;
+  	.footer_about{
+  		padding-left: 30px;
+  		padding-top: 30px;
+  		h4{
+  			color: $white; padding-bottom: 20px; border-bottom: 2px solid $theme-red;
+  			width: 200px; margin-bottom: 20px;
+  			text-transform: uppercase;
+  			font-size: 20px;
+  		}
+  		p{
+  			font-size: 12px;
+  			color: $theme-gray;
+  			margin-bottom: 20px;
+  			span{
+  				background-color: $theme-red;
+  				padding: 5px 8px;
+  				border-radius: 4px;
+  				color: $white;
+  				font-size: 18px;
+  				margin-right: 10px;
+  			}
+  		}
+  	}
+  	.gmap{
+  		padding: 20px;
+  		margin-top: 80px;
+  		.map{ border:0;width:100%;max-width:600px; }
+  	}
+  	.footer_end{
+  		background: $primary;
+  		font-size: 12px;
+  		color: $white;
+  		text-align: center;
+  		padding: 20px;
+  		overflow: hidden;
+  		span{ color: $theme-red }
+  	}
+  }
+}
+
+
+/*-------- Responsive PC -------*/
+@media only screen and (min-width: 860px) {
+
+}
+
+/*-------- Responsive Tablet -------*/
+@media screen and (max-width: 859px){
+
+}
+
+/*-------- Responsive Mobile -------*/
+@media screen and (max-width: 420px){
+  .footer_end{ font-size: 10px !important; }
+}

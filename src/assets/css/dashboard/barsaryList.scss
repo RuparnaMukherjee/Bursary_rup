@@ -1,0 +1,20 @@
+.bursaryList{
+    height: 90vh;
+    overflow-y: scroll;
+}
+.bursaryList::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+.bursaryList::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+.bursaryList::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44, rgba(235, 141, 53, 0.637)),color-stop(0.72, rgba(214, 107, 6, 0.788)),color-stop(0.86, rgba(204, 113, 29, 0.945)));
+}

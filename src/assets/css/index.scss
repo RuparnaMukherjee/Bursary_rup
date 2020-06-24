@@ -1,0 +1,19 @@
+/* Custom Bootstrap Color */
+
+/*$theme-colors: (
+  "info": tomato,
+  "danger": teal
+);*/
+
+
+
+@import "./loader";
+@import "./animationOnScreen";
+@import "./login";
+@import "./header";
+@import "./footer";
+@import "./home";
+@import "./contact";
+@import "./dashboard";
+@import "~bootstrap/scss/bootstrap";
+@import "./reset";
